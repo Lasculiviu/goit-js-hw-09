@@ -1,22 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
-  color: #212121;
-  line-height: 1.5;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
 body {
   height: 100vh;
   margin: 0;
@@ -35,7 +16,7 @@ p {
 p a {
   text-decoration: none;
   padding: 10px 20px;
-  background-color: #aecfe9;
+  background-color: #2196F3;
   color: white;
   border-radius: 5px;
   font-size: 16px;
@@ -47,7 +28,7 @@ p a {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -67,7 +48,7 @@ button[data-start] {
 }
 
 button[data-stop] {
-  background-color: #f1a604;
+  background-color: #f1b510;
   color: white;
 }
 
