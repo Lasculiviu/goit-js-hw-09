@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+p {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 0;
+}
+
+p a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #aecfe9;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.startstop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button[data-start] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button[data-stop] {
+  background-color: #f1a604;
+  color: white;
+}
+
+button[data-start]:disabled {
+  background-color: #9E9E9E;
+}
+
+button[data-stop]:disabled {
+  background-color: #9E9E9E;
+}
