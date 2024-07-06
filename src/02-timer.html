@@ -3,14 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Countdown timer</title>
-    <link rel="stylesheet" href="css/common.css" />
+    <title>Countdown Timer</title>
+    
+    <style>
+      #datetime-picker.invalid {
+        border-color: red;
+      }
+      #error-message {
+        color: red;
+        display: none;
+      }
+      .timer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .field {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 0;
+      }
+      .value {
+        font-size: 2em;
+        margin-right: 10px;
+      }
+    </style>
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
 
-    <input type="text" id="datetime-picker" />
-    <button type="button" data-start>Start</button>
+    <input type="date" id="datetime-picker" />
+    <button type="button" id="start-button">Start</button>
+    <div id="error-message">
+      Data selectată este în trecut. Te rog selectează o dată validă!
+    </div>
 
     <div class="timer">
       <div class="field">
