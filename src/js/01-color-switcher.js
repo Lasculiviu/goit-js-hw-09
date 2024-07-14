@@ -10,6 +10,7 @@ const body = document.body;
 let colorInterval = null;
 
 
+
 function startColorChange() {
     startButton.disabled = true;
     stopButton.disabled = false;
