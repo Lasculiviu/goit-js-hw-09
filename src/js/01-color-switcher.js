@@ -27,5 +27,6 @@ function stopColorChange() {
     clearInterval(colorInterval);
 }
 
+
 startButton.addEventListener('click', startColorChange);
 stopButton.addEventListener('click', stopColorChange);
